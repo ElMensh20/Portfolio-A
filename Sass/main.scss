@@ -7,23 +7,25 @@ $txt-color: #f2f2f2;
     padding: 0;
     margin: 0;
     font-family: 'Roboto Slab', serif;
-    color: $txt-color;
 }
+
+
 
 .txt-span-color{
     color:$txt-span-color;
 }
 
 .container{
-    height: 100%;
+    height: 97%;
 }
 
 main{
     float: left;
-    width: 97%;
+    width: 50%;
     height: 100%;
+    max-height: 100%;
     left: 3%;
-    position: absolute;
+    position:static;
     background-color: $main-color;
     
     .main-profile{
@@ -38,7 +40,7 @@ main{
                 width: 100%;
                 height: 100%;
                 border: 2px dashed $aside-color; 
-                display: block;
+                display: flex;
             }
         }
 
@@ -46,8 +48,22 @@ main{
             margin-top: $margin-top;
             text-align: center;
 
+            .quote{
+                color:$txt-color;
+                font-size: 22px;
+              }
+
             p{
                 font-size: 22px;
+            }
+            h1 {
+                position: relative;
+                perspective: 500px;
+                top: 50%;
+                padding: 0 20px;
+                transform: translateY(-50%);
+                font-weight: 300;
+                
             }
         }
     }
@@ -72,4 +88,8 @@ aside{
         position: absolute;
     }
 }
+//---------------------------------------------------------------
 
+
+  
+  

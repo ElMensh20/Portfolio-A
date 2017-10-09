@@ -1,12 +1,7 @@
-// Quotes about learning from goodreads -- http://www.goodreads.com/quotes/tag/learning
-
 var quotes = [
-	"“Wisdom is not a product of schooling but of the lifelong attempt to acquire it.”  <br><br>— Albert Einstein",
-	"“Live as if you were to die tomorrow. Learn as if you were to live forever.” <br><br>—  Mahatma Gandhi",
-	"“Tell me and I forget, teach me and I may remember, involve me and I learn.” <br><br>— Benjamin Franklin",
-	"“Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.”<br><br>— Richard Feynman",
+	"Java<span class='txt-span-color'>Developer</span>",
 	
-	"“It is important that students bring a certain ragamuffin, barefoot irreverence to their studies; they are not here to worship what is known, but to question it.”  <br><br>—  Jacob Bronowski"
+	//"“It is important that students bring a certain ragamuffin, barefoot irreverence to their studies; they are not here to worship what is known, but to question it.”  <br><br>—  Jacob Bronowski"
 ];
 
 var index = 0;
@@ -48,6 +43,29 @@ function cycleQuotes(arr, i, sel){
 	
 }
 
-$(window).on('load', function () {
-    cycleQuotes(quotes, index, ".split");
+$(window).on("load",function(){
+    
+  //  alert("Khouly");
+	//cycleQuotes(quotes, index, ".split");
 });
+
+// -----------------------------------------------------------------
+ 
+function kill(){
+    splitTextTimeline.clear().time(0);
+    mySplitText.revert();
+}
+
+function textAnimmation(){
+    kill();
+    mySplitText.split({type:"chars, words"}) 
+    splitTextTimeline.staggerFrom(mySplitText.chars, 0.6, {scale:4, autoAlpha:0,  rotationX:-180,  transformOrigin:"100% 50%", ease:Back.easeOut}, 0.02);
+}
+
+var $quote = $(".quote"),
+mySplitText = new SplitText($quote, {type:"words"}),
+splitTextTimeline = new TimelineLite();
+
+TweenLite.set($quote, {perspective:400});
+
+textAnimmation();
