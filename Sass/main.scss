@@ -1,10 +1,21 @@
 $margin-top: 50px;
 $main-color: #47b8e0;
 $aside-color: #34314c;
-
+$txt-span-color: #ffc952;
+$txt-color: #f2f2f2;
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
+    color: $txt-color;
+}
+
+.txt-span-color{
+    color:$txt-span-color;
+}
+
+.container{
+    height: 100%;
 }
 
 main{
@@ -20,17 +31,24 @@ main{
         margin-right: auto;
         margin-top: $margin-top;
         .img-profile{    
-            width: 400px;
-            height: 350px;  
-
+            width: 350px;
+            height: 400px;  
+            margin: auto;
             img{
                 width: 100%;
+                height: 100%;
                 border: 2px dashed $aside-color; 
+                display: block;
             }
         }
 
         .txt-annimation{
             margin-top: $margin-top;
+            text-align: center;
+
+            p{
+                font-size: 22px;
+            }
         }
     }
 }
