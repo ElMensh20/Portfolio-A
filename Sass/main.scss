@@ -1,3 +1,7 @@
+$margin-top: 50px;
+$main-color: #47b8e0;
+$aside-color: #34314c;
+
 *{
     padding: 0;
     margin: 0;
@@ -5,12 +9,49 @@
 
 main{
     float: left;
+    width: 97%;
+    height: 100%;
+    left: 3%;
+    position: absolute;
+    background-color: $main-color;
+    
+    .main-profile{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $margin-top;
+        .img-profile{    
+            width: 400px;
+            height: 350px;  
 
+            img{
+                width: 100%;
+                border: 2px dashed $aside-color; 
+            }
+        }
+
+        .txt-annimation{
+            margin-top: $margin-top;
+        }
+    }
 }
 
 aside{
     position: fixed;
     float: left;
-    width: 7%;
+    width: 3%;
     height: 100%;
+    background-color: $aside-color;
+    
+    div{
+        margin-top: $margin-top;
+    }
+
+    .icon-aside{
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+        position: absolute;
+    }
 }
+

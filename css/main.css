@@ -3,12 +3,37 @@
   margin: 0; }
 
 main {
-  float: left; }
+  float: left;
+  width: 97%;
+  height: 100%;
+  left: 3%;
+  position: absolute;
+  background-color: #47b8e0; }
+  main .main-profile {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
+    main .main-profile .img-profile {
+      width: 400px;
+      height: 350px; }
+      main .main-profile .img-profile img {
+        width: 100%;
+        border: 2px dashed #34314c; }
+    main .main-profile .txt-annimation {
+      margin-top: 50px; }
 
 aside {
   position: fixed;
   float: left;
-  width: 7%;
-  height: 100%; }
+  width: 3%;
+  height: 100%;
+  background-color: #34314c; }
+  aside div {
+    margin-top: 50px; }
+  aside .icon-aside {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
