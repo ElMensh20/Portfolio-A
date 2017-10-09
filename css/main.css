@@ -1,3 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  color: #f2f2f2; }
 
+.txt-span-color {
+  color: #ffc952; }
+
+.container {
+  height: 100%; }
+
+main {
+  float: left;
+  width: 97%;
+  height: 100%;
+  left: 3%;
+  position: absolute;
+  background-color: #47b8e0; }
+  main .main-profile {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
+    main .main-profile .img-profile {
+      width: 350px;
+      height: 400px;
+      margin: auto; }
+      main .main-profile .img-profile img {
+        width: 100%;
+        height: 100%;
+        border: 2px dashed #34314c;
+        display: block; }
+    main .main-profile .txt-annimation {
+      margin-top: 50px;
+      text-align: center; }
+      main .main-profile .txt-annimation p {
+        font-size: 22px; }
+
+aside {
+  position: fixed;
+  float: left;
+  width: 3%;
+  height: 100%;
+  background-color: #34314c; }
+  aside div {
+    margin-top: 50px; }
+  aside .icon-aside {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
