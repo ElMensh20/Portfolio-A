@@ -1,4 +1,4 @@
-var quotes = [
+/*var quotes = [
 	"Java<span class='txt-span-color'>Developer</span>",
 	
 	//"“It is important that students bring a certain ragamuffin, barefoot irreverence to their studies; they are not here to worship what is known, but to question it.”  <br><br>—  Jacob Bronowski"
@@ -48,7 +48,7 @@ $(window).on("load",function(){
   //  alert("Khouly");
 	//cycleQuotes(quotes, index, ".split");
 });
-
+*/
 // -----------------------------------------------------------------
  
 function kill(){
