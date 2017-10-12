@@ -1,12 +1,7 @@
-// Quotes about learning from goodreads -- http://www.goodreads.com/quotes/tag/learning
-
-var quotes = [
-	"“Wisdom is not a product of schooling but of the lifelong attempt to acquire it.”  <br><br>— Albert Einstein",
-	"“Live as if you were to die tomorrow. Learn as if you were to live forever.” <br><br>—  Mahatma Gandhi",
-	"“Tell me and I forget, teach me and I may remember, involve me and I learn.” <br><br>— Benjamin Franklin",
-	"“Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.”<br><br>— Richard Feynman",
+/*var quotes = [
+	"Java<span class='txt-span-color'>Developer</span>",
 	
-	"“It is important that students bring a certain ragamuffin, barefoot irreverence to their studies; they are not here to worship what is known, but to question it.”  <br><br>—  Jacob Bronowski"
+	//"“It is important that students bring a certain ragamuffin, barefoot irreverence to their studies; they are not here to worship what is known, but to question it.”  <br><br>—  Jacob Bronowski"
 ];
 
 var index = 0;
@@ -47,7 +42,3 @@ function cycleQuotes(arr, i, sel){
 	}, ((time * 4) + (time * 4)) * 1000);
 	
 }
-
-$(window).on('load', function () {
-    cycleQuotes(quotes, index, ".split");
-});
