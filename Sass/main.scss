@@ -2,156 +2,69 @@ $margin-top: 50px;
 $main-color: #47b8e0;
 $aside-color: #34314c;
 $txt-span-color: #ffc952;
-$txt-color: #ffffff;
-$personal-pics:("https://i.ytimg.com/vi/4cZ54UADiak/maxresdefault.jpg",
-"https://img00.deviantart.net/04a9/i/2007/152/3/e/nature_bg_59_by_peace_of_art.jpg",
-"https://pre00.deviantart.net/c60c/th/pre/i/2007/244/6/6/nature_bg_126_by_peace_of_art.jpg");
+$txt-color: #f2f2f2;
 *{
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto Slab', serif;
 }
 
-body{
-    // background: -webkit-linear-gradient(bottom, #34314c, #34314c 50%, #47b8e0 0%, #47b8e0 0%);
-    background: -webkit-linear-gradient(right, #34314c, #34314c 50%, #47b8e0 0%, #47b8e0 0%);
-    //background:$main-color;
-}
+
+
 .txt-span-color{
     color:$txt-span-color;
 }
+
 .container{
-    height: 100%;
+    height: 97%;
 }
+
 main{
     float: left;
-    width: 100%;
+    width: 50%;
     height: 100%;
     max-height: 100%;
     left: 3%;
+    position:static;
+    background-color: $main-color;
     
-    //    position:static;
     .main-profile{
-      //  margin-left: auto;
-        //margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: $margin-top;
-        // .quotsBackground{
-        //     position: absolute;
-        //     background-color: $aside-color;
-        //     width: 97%;
-        //     height: 60%;
-        //     left: 3%;
-        //     top:40%;
-        // }
         .img-profile{    
             width: 350px;
             height: 400px;  
             margin: auto;
-            // img{
-            //     width: 100%;
-            //     height: 100%;
-            //     border: 2px dashed $aside-color; 
-            //     display: flex;
-            // }
-            
-            #carouselExampleIndicators{
-                @extend .all-hight-and-wedth;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-                // height: 100%;
-                .carousel-inner{
-                     @extend .all-hight-and-wedth;
-                    $x :1;
-                    @each $i in $personal-pics
-                    {
-                        .pic-#{$x}{
-                            @extend .all-hight-and-wedth;
-                            background-image: url($i);
-                        }
-                        $x : $x + 1;
-                    }
-                }
+            img{
+                width: 100%;
+                height: 100%;
+                border: 2px dashed $aside-color; 
+                display: flex;
             }
         }
-        .SecondJobName{
-            position: relative;
-            width: 50%;
-            float: left;
-            text-align: left;
-            h2{
-                margin-left: 10px;
-                font-size: 3rem;
-            }
-        }
-        .FirstJobName{
-            // left:45%;
-            position: relative;
-            width: 50%;
-            float: left;
-            text-align: right;
-            padding-right:10px; 
-            h2{
-                font-size: 3rem;
-            }
-        }
+
         .txt-annimation{
-            //margin-top: $margin-top;
-            padding: 60px;
+            margin-top: $margin-top;
             text-align: center;
+
             .quote{
                 color:$txt-color;
-                padding-left: 1.7%;
-                text-align: left;
-                font-size: 1.6rem;
+                font-size: 22px;
               }
 
-            // h1 {
-            //     position: relative;
-            //     perspective: 500px;
-            //     top: 50%;
-            //     padding: 0 20px;
-            //     transform: translateY(-50%);
-            //     font-weight: 300;
-                
-            // }
-            .NameOfProfiles{
-                // background-color: rgba($color: #000000, $alpha: 0.4);
-                background: -webkit-linear-gradient(right, rgba($color: $txt-span-color, $alpha: 0.3), rgba($color: $txt-span-color, $alpha: 0.3) 50%, rgba($color: #34314c, $alpha: 0.4) 0%, rgba($color: #34314c, $alpha: 0.4) 0%);
-                -moz-border-radius:10px;  /* for Firefox */
-                -webkit-border-radius:10px; /* for Webkit-Browsers */
-                border-radius:15px; /* regular */
-                padding: 10px;
-                h2{
-                    font-size: 3.0rem;
-                    color:#ffffff;                    
-                }
-
-                .FirstJobName{
-                    h2{
-                        font-size: 2.4rem;
-                    } 
-                }
-
-                .SecondJobName{
-                    h2{
-                        font-size: 2.4rem;
-                    }
-                }
-                               
+            p{
+                font-size: 22px;
             }
-            // .title-main{
-            // //    width: 50%;
-            //     h1 {
-            //         position: relative;
-            //         perspective: 500px;
-            //         top: 50%;
-            //         padding: 0 20px;
-            //         transform: translateY(-50%);
-            //         font-weight: 300;
-                    
-            //     }
-
-            //     .left-h1{
-            //         text-align: right;
-            //     }
-            // }
+            h1 {
+                position: relative;
+                perspective: 500px;
+                top: 50%;
+                padding: 0 20px;
+                transform: translateY(-50%);
+                font-weight: 300;
+                
+            }
         }
     }
 }
@@ -179,126 +92,4 @@ aside{
 
 
   
-.carousel-item {
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  .all-hight-and-wedth{
-      height: 100%;
-      width: 100%;
-  }
-
-  //------------------- Media Query ------------------------
-
-  @media (max-width: 576px) { 
-    aside{
-        display: none;
-    }
-
-    main{
-        .main-profile{
-            margin-top: $margin-top - 25;            
-            .img-profile{
-                max-width: 208px;
-                max-height: 300px;
-            }
-            .FirstJobName{
-                h2{
-                    margin-right: 10px;
-                    font-size: 1.7rem;
-                }
-            }
-
-            .SecondJobName{
-                h2{ 
-                    margin-right: 10px;
-                    font-size: 1.7rem;
-                }
-            }
-            
-            .txt-annimation{
-                left: 50%;
-                padding: 15px;
-                margin-top: $margin-top - 25;
-
-                .quote{
-                    font-size: 14px;
-                }
-
-                .NameOfProfiles{
-                    // padding-left: ;
-                    min-width: 208px;
-                    
-                    .FirstJobName {
-                        float: left;
-                        h2{
-                            
-                            width: 100%;
-                            font-size: 1.3rem;
-                        }
-                    }
-                    .SecondJobName{
-                        float: left;
-                        h2{
-                            width: 100%;
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
-            }
-
-            
-        
-        }
-   }
-}
-
-
-
-.font-chela{
-    font-family: 'Chela One';
-}
   
-  // Medium devices (tablets, 768px and up)
-//   @media (min-width: 768px) { 
-
-    
-//   }
-  
-  @media (min-width: 577px) and (max-width: 767px) { 
-    aside{
-        display: none;
-    }
-
-    .main-profile{
-        
-
-        .txt-annimation{
-            .quote{
-                font-size: 22px;
-            }
-
-            
-        }
-
-        
-        
-    }
-   }
-  
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) and (max-width: 991px) { 
-    aside{
-        width: 4.5%;
-    }
-   }
-  
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) and (max-width: 1199px) {  }
-  
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {  }
