@@ -9,17 +9,83 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     
     <!-- Start Menu -->    
-    <aside class="">
-       <div class="aside">
-            <div>
-                <img class="icon-aside" src="http://www.makemyweb.in/startlearning/images/Profile.png" alt="" srcset="">
-            </div>
-       </div>
+    <aside>
+        <a id="toggle" style="margin: 30%;">
+            <i class="fa fa-bars  fa-lg onClick" aria-hidden="true"></i>
+        </a>
+        <img id="me" src="./images/avatar.png" alt="Me">
+        <div class="list-menu">
+            <a href="#">
+                <div class="row">
+                    <div class="float-left cell hoverDisplay">
+                        <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu float-left cell fadeOut">Home</div>
+                </div>
+            </a>
+            <div class="fix-clear"></div>
+            <a href="#">
+                <div class="row">
+                    <div class="float-left cell hoverDisplay">
+                        <i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu float-left cell fadeOut">Profile</div>
+                </div>
+            </a>
+            <div class="fix-clear"></div>
+            <a href="#">
+                <div class="row">
+                    <div class="float-left cell hoverDisplay">
+                        <i class="fa fa-address-card-o fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu float-left cell fadeOut">Resume</div>
+                </div>
+            </a>
+            <div class="fix-clear"></div>
+            <a href="#">
+                <div class="row">
+                    <div class="float-left cell hoverDisplay">
+                        <i class="fa fa-bullhorn fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu float-left cell fadeOut">Plogs</div>
+                </div>
+            </a>
+            <div class="fix-clear"></div>
+            <a href="#">
+                <div class="row">
+                    <div class="float-left cell hoverDisplay">
+                        <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu float-left cell fadeOut">info</div>
+                </div>
+            </a>
+            <div class="fix-clear"></div>
+            <a href="#">
+                <div class="row">
+                    <div class="float-left cell hoverDisplay">
+                        <i class="fa fa-users fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu float-left cell fadeOut">Feedbacks</div>
+                </div>
+            </a>
+            <div class="fix-clear"></div>
+            <a href="#">
+                <div class="row">
+                    <div class="float-left cell hoverDisplay">
+                        <i class="fa fa-volume-control-phone fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu float-left cell fadeOut">contacts</div>
+                </div>
+            </a>
+        </div>
     </aside>
     <!-- End Menu -->    
     <main class="container-fluid">
@@ -110,15 +176,14 @@
         </div>
         
     </main>
-    <script src="./js/jquery-3.2.1.min.js"></script>    
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-    
-    <script src="./js/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <!-- <script src="./js/jquery-3.2.1.min.js"></script>     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="./js/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script> -->
     <script src="./js/popper.min.js" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"  crossorigin="anonymous"></script>
     <script src="./js/SplitText.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
-    
+    <script src="./js/menu.js"></script>
     <script src="./js/main.js"></script>
     
 </body>

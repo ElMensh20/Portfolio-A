@@ -71,20 +71,6 @@ main {
         main .main-profile .txt-annimation .NameOfProfiles .SecondJobName h2 {
           font-size: 2.4rem; }
 
-aside {
-  position: fixed;
-  float: left;
-  width: 3%;
-  height: 100%;
-  background-color: #34314c; }
-  aside div {
-    margin-top: 50px; }
-  aside .icon-aside {
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    position: absolute; }
-
 .carousel-item {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
