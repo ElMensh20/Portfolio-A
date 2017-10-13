@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+aside {
+  background: rgba(0, 0, 0, 0.08);
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  font-size: 22px;
+  font-family: 'Crimson Text', serif;
+  font-weight: bold;
+}
+
+aside a {
+  position: relative;
+}
+
+aside img {
+  width: 70%;
+  margin: 17%;
+  position: relative;
+}
+
+aside .list-menu .row {
+  margin-left: 20%;
+  padding-bottom: 15%;
+  width: fit-content;
+  position: relative;
+  text-align: center;
+}
+
+aside .list-menu .row .cell {
+  padding: 6px;
+  margin: auto;
+  width: max-content;
+}
+
+.home:hover .homeV {
+  display: block;
+}
+
+.float-left {
+  float: left;
+}
+
+.fix-clear {
+  clear: both;
+}
+
+.big {
+  width: 90%;
+  margin: 5%;
+}
+
+.smallAside {
+  width: 5%;
+}
+ 
+
+ /*# sourceMappingURL= main.css.map */

@@ -302,3 +302,13 @@ aside{
   
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {  }
+
+
+
+  //----------------------- Our Special FreamWork --------------------------------
+
+  @for $i from 1 through 12 {
+      .col-#{$i}{
+          width: (100% / ( 12 / $i));
+      }
+  }
