@@ -1,0 +1,67 @@
+a{
+    color:#000 !important;
+    text-decoration:none !important;
+}
+aside{
+    background: rgba(0, 0, 0, 0.08);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    font-size: 22px;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    a{
+        position: relative;
+    }
+    img{
+        width: 70%;
+        margin:13%;
+        position: relative;
+        border-radius: 50%;
+    }
+    .list-menu{
+        .row{
+            margin-left: 20%;
+            padding-bottom: 2%;
+            width: fit-content;
+            position: relative;
+            text-align: center;
+            .cell{
+                padding: 6px;
+                width: max-content;
+            }
+        }
+    }
+}
+.fix-clear{
+    clear: both;
+}
+.big{
+    width:90%;
+    margin: 5%;
+}
+.smallAside{
+    width:5%;
+}
+.hoverFun{
+    position: absolute;
+    left: 53.5px;
+    background: rgba(0, 0, 0, 0.08);
+}
+.hoverImg{
+    left:62px;
+    width: 180%;
+    border: 1px solid gray;
+    border-radius: 50%;
+    bottom: 20px;
+}
+.oclickIcon{
+    float: right;
+    margin-top: 3%;
+    margin-right: 3%;
+
+}
+// .view-hover{
+//     position: absolute;
+//     margin-left: 200%;
+// }

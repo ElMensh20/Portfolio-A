@@ -41,4 +41,4 @@ function cycleQuotes(arr, i, sel){
 		cycleQuotes(quotes, index, ".split");
 	}, ((time * 4) + (time * 4)) * 1000);
 	
-}
+}*/

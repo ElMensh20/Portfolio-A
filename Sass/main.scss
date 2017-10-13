@@ -155,26 +155,6 @@ main{
         }
     }
 }
-
-aside{
-    position: fixed;
-    float: left;
-    width: 3%;
-    height: 100%;
-    background-color: $aside-color;
-    
-    div{
-        margin-top: $margin-top;
-    }
-
-    .icon-aside{
-        max-width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        
-        position: absolute;
-    }
-}
 //---------------------------------------------------------------
 
 
