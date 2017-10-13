@@ -42,30 +42,3 @@ function cycleQuotes(arr, i, sel){
 	}, ((time * 4) + (time * 4)) * 1000);
 	
 }
-
-$(window).on("load",function(){
-    
-  //  alert("Khouly");
-	//cycleQuotes(quotes, index, ".split");
-});
-*/
-// -----------------------------------------------------------------
- 
-function kill(){
-    splitTextTimeline.clear().time(0);
-    mySplitText.revert();
-}
-
-function textAnimmation(){
-    kill();
-    mySplitText.split({type:"chars, words"}) 
-    splitTextTimeline.staggerFrom(mySplitText.chars, 0.6, {scale:4, autoAlpha:0,  rotationX:-180,  transformOrigin:"100% 50%", ease:Back.easeOut}, 0.02);
-}
-
-var $quote = $(".quote"),
-mySplitText = new SplitText($quote, {type:"words"}),
-splitTextTimeline = new TimelineLite();
-
-TweenLite.set($quote, {perspective:400});
-
-textAnimmation();
