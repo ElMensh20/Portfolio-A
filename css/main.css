@@ -12,6 +12,10 @@ body {
 
 main {
   float: left;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  left: 3%; }
   main .main-profile {
     margin-top: 50px; }
     main .main-profile .img-profile {
@@ -70,17 +74,16 @@ main {
 aside {
   position: fixed;
   float: left;
-  width: 4%;
+  width: 3%;
   height: 100%;
   background-color: #34314c; }
+  aside div {
+    margin-top: 50px; }
   aside .icon-aside {
     max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    position: fixed; }
-  aside button {
-    margin: 10%;
-    color: black; }
+    position: absolute; }
 
 .carousel-item {
   background: no-repeat center center scroll;
@@ -138,5 +141,40 @@ aside {
 @media (min-width: 768px) and (max-width: 991px) {
   aside {
     width: 4.5%; } }
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
+.col-12 {
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
